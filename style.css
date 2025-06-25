@@ -1,0 +1,35 @@
+*{
+    box-sizing: content-box;
+}
+.gameOuterFrame{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.gameMain{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.snakeBody,.snakeTail,.snake{
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    background:radial-gradient(circle, #16c72e, #007fff);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.food{
+    width: 50px;
+    height: 50px;
+    background:radial-gradient(circle, #ff0000, #ff8000);
+    position: absolute;
+}
+.snakeHead{
+    background:linear-gradient(to bottom right, #fb0ce7, #d9ff00);
+    z-index: 999;
+}
